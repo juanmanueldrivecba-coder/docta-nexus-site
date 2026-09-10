@@ -1,0 +1,165 @@
+services:
+  - type: web
+    name: docta-nexus-site
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+    routes:
+      - type: rewrite
+        source: /
+        destination: /index.html
+      - type: rewrite
+        source: /activos-google.html
+        destination: /soluciones/datos-medicion/activos-google.html
+      - type: rewrite
+        source: /blog-agentes-ia-crm.html
+        destination: /blog/blog-agentes-ia-crm.html
+      - type: rewrite
+        source: /blog-auditoria-funnel-antes-de-invertir.html
+        destination: /blog/blog-auditoria-funnel-antes-de-invertir.html
+      - type: rewrite
+        source: /blog-como-reducir-cpa.html
+        destination: /blog/blog-como-reducir-cpa.html
+      - type: rewrite
+        source: /blog-creatividades-ia-anuncios.html
+        destination: /blog/blog-creatividades-ia-anuncios.html
+      - type: rewrite
+        source: /blog-dashboard-unificado-meta-google-analytics.html
+        destination: /blog/blog-dashboard-unificado-meta-google-analytics.html
+      - type: rewrite
+        source: /blog-de-agencia-a-ai-product-lab.html
+        destination: /blog/blog-de-agencia-a-ai-product-lab.html
+      - type: rewrite
+        source: /blog-ecosistema-ia-institucionalizado.html
+        destination: /blog/blog-ecosistema-ia-institucionalizado.html
+      - type: rewrite
+        source: /blog-errores-comunes-medir-paid-media.html
+        destination: /blog/blog-errores-comunes-medir-paid-media.html
+      - type: rewrite
+        source: /blog-framework-eeat-google.html
+        destination: /blog/blog-framework-eeat-google.html
+      - type: rewrite
+        source: /blog-google-ads-vs-meta-ads.html
+        destination: /blog/blog-google-ads-vs-meta-ads.html
+      - type: rewrite
+        source: /blog-ia-bid-management.html
+        destination: /blog/blog-ia-bid-management.html
+      - type: rewrite
+        source: /blog-performance-marketing-o-producto-propio.html
+        destination: /blog/blog-performance-marketing-o-producto-propio.html
+      - type: rewrite
+        source: /blog-programmatic-seo.html
+        destination: /blog/blog-programmatic-seo.html
+      - type: rewrite
+        source: /blog-que-es-full-funnel-marketing.html
+        destination: /blog/blog-que-es-full-funnel-marketing.html
+      - type: rewrite
+        source: /blog-que-es-seo-generativo-geo.html
+        destination: /blog/blog-que-es-seo-generativo-geo.html
+      - type: rewrite
+        source: /blog-que-es-shadow-ia.html
+        destination: /blog/blog-que-es-shadow-ia.html
+      - type: rewrite
+        source: /blog-reporting-automatizado-beneficios.html
+        destination: /blog/blog-reporting-automatizado-beneficios.html
+      - type: rewrite
+        source: /blog-roas-vs-roi-paid-media.html
+        destination: /blog/blog-roas-vs-roi-paid-media.html
+      - type: rewrite
+        source: /blog-schema-org-para-ia.html
+        destination: /blog/blog-schema-org-para-ia.html
+      - type: rewrite
+        source: /blog-senales-autoridad-google.html
+        destination: /blog/blog-senales-autoridad-google.html
+      - type: rewrite
+        source: /casos-automatizacion.html
+        destination: /casos/casos-automatizacion.html
+      - type: rewrite
+        source: /casos-conversiones.html
+        destination: /casos/casos-conversiones.html
+      - type: rewrite
+        source: /casos-ecommerce.html
+        destination: /casos/casos-ecommerce.html
+      - type: rewrite
+        source: /casos-leadgen.html
+        destination: /casos/casos-leadgen.html
+      - type: rewrite
+        source: /control-presupuestario.html
+        destination: /soluciones/planificacion-control/control-presupuestario.html
+      - type: rewrite
+        source: /creatividades.html
+        destination: /soluciones/produccion-creativa/creatividades.html
+      - type: rewrite
+        source: /crm-agentes-ia.html
+        destination: /soluciones/crm-agentes-ia.html
+      - type: rewrite
+        source: /desarrollo-web.html
+        destination: /soluciones/activacion-medios/desarrollo-web.html
+      - type: rewrite
+        source: /desarrollos-ai-landscape-designer.html
+        destination: /desarrollos/desarrollos-ai-landscape-designer.html
+      - type: rewrite
+        source: /desarrollos-automatizaciones.html
+        destination: /desarrollos/desarrollos-automatizaciones.html
+      - type: rewrite
+        source: /desarrollos-docta-studio.html
+        destination: /desarrollos/desarrollos-docta-studio.html
+      - type: rewrite
+        source: /desarrollos-growth-intelligence.html
+        destination: /desarrollos/desarrollos-growth-intelligence.html
+      - type: rewrite
+        source: /desarrollos-nexus-avatar.html
+        destination: /desarrollos/desarrollos-nexus-avatar.html
+      - type: rewrite
+        source: /desarrollos-nexus-reporting.html
+        destination: /desarrollos/desarrollos-nexus-reporting.html
+      - type: rewrite
+        source: /desarrollos-nexus-seo-tools.html
+        destination: /desarrollos/desarrollos-nexus-seo-tools.html
+      - type: rewrite
+        source: /ecommerce-retail-media.html
+        destination: /soluciones/activacion-medios/ecommerce-retail-media.html
+      - type: rewrite
+        source: /estrategia-consultoria.html
+        destination: /soluciones/estrategia-consultoria/estrategia-consultoria.html
+      - type: rewrite
+        source: /google-mi-negocio.html
+        destination: /soluciones/datos-medicion/google-mi-negocio.html
+      - type: rewrite
+        source: /marketing-de-contenidos.html
+        destination: /soluciones/activacion-medios/marketing-de-contenidos.html
+      - type: rewrite
+        source: /paid-media.html
+        destination: /soluciones/activacion-medios/paid-media.html
+      - type: rewrite
+        source: /performance-marketing.html
+        destination: /soluciones/activacion-medios/performance-marketing.html
+      - type: rewrite
+        source: /planificacion.html
+        destination: /soluciones/planificacion-control/planificacion.html
+      - type: rewrite
+        source: /reporting-automatizado.html
+        destination: /soluciones/datos-medicion/reporting-automatizado.html
+      - type: rewrite
+        source: /sem-ppc-google-ads.html
+        destination: /soluciones/activacion-medios/sem-ppc-google-ads.html
+      - type: rewrite
+        source: /seo-generativo.html
+        destination: /soluciones/estrategia-consultoria/seo-generativo.html
+      - type: rewrite
+        source: /seo-y-geo.html
+        destination: /soluciones/activacion-medios/seo-y-geo.html
+      - type: rewrite
+        source: /shadow-ia-enterprise.html
+        destination: /soluciones/shadow-ia-enterprise.html
+      - type: rewrite
+        source: /social-ads.html
+        destination: /soluciones/activacion-medios/social-ads.html
+      - type: rewrite
+        source: /tracking-first-party.html
+        destination: /soluciones/datos-medicion/tracking-first-party.html
